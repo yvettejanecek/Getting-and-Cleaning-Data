@@ -1,4 +1,5 @@
 # SamsungGalaxyS Project
+See Codebook.
 ##Getting-and-Cleaning-Data
 ####Script:  run_analysis.R
 library(dplyr)
