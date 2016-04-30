@@ -1,5 +1,6 @@
 # SamsungGalaxyS Project
 See Codebook.
+
 Run script run_analysis,R
 
 ##Getting-and-Cleaning-Data
