@@ -13,13 +13,15 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Project Data:  
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-run_analysis.R
-The script should do the following:  
-Merge the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement.
-Use descriptive activity names to name the activities in the data set.
-Appropriately label the data set with descriptive variable names.
-Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Script:  run_analysis.R
+The script does the following:
+Download and unzip data set
+Read test and training data
+Read activity names and feature names
+Merge test and traing data and add descriptive names
+Extract mean and standard deviation for each measurement
+Clean names
+Create tidy data set with mean of each activity and each subject
 
 Activities:
 1 WALKING
