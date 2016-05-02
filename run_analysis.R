@@ -32,8 +32,8 @@ colnames(combine_data_y_activity) <- c("ActivityNumber", "ACTIVITY")
 combine_data <- cbind(combine_data_subject, combine_data_y_activity, combine_data_x)
 
 #Extract mean and standard deviation for each measurement
-mean_std_rows <- grep("mean()|std()", features$V2) #determine column numbers with mean or std
-extracted_data <- combine_data[mean_std_rows, ]
+mean_std <- grep(".*mean*|.*std*", features[,2] #determine column numbers with mean or std
+extracted_data <- combine_data[mean_std, ]
 
 #Clean names
 names(extracted_data) <- gsub("Acc", "Acelerometer", names(extracted_data))
