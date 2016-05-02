@@ -10,20 +10,29 @@ A full description is available at the site where the data was obtained:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Project Data:  
+####Project Data:  
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Script:  run_analysis.R
+####Script:  run_analysis.R
+
 The script does the following:
+
 Download and unzip data set
+
 Read test and training data
+
 Read activity names and feature names
+
 Merge test and traing data and add descriptive names
+
 Extract mean and standard deviation for each measurement
+
 Clean names
+
 Create tidy data set with mean of each activity and each subject
 
-Activities:
+
+####Activities:
 
 1 WALKING
 
@@ -37,7 +46,7 @@ Activities:
 
 6 LAYING
 
-Features
+####Features
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These 
 time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median 
 filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration 
@@ -88,6 +97,8 @@ fBodyGyroMag
 
 fBodyGyroJerkMag
 
+
+####Variables
 
 The set of variables that were estimated from these signals are: 
 
