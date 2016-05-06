@@ -19,5 +19,10 @@ Appropriately lables the data set with descriptive variable names
 
 Creates an independent tidy data set with the average of each variable for each activity and each subect.
 
-  This resultant data set is TidyRunAnalysis.txt
+####Files
+This resultant data set is TidyRunAnalysis.txt
+
+The script is run_analysis.R
+
+Additional information is provided in the Codebook. 
 
