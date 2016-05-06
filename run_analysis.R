@@ -33,7 +33,8 @@ combine_data <- cbind(combine_data_subject, combine_data_y_activity, combine_dat
 
 #Extract mean and standard deviation for each measurement
 mean_std <- grep("*mean*|*std*", features[,2]) #determine column numbers with mean or std
-extracted_data <- combine_data[,mean_std]  #extract mean and standard deviation measurements  
+extracted_data_prep <- combine_data[, 4:564]
+extracted_data <- extracted_data_prep[,mean_std]  #extract mean and standard deviation measurements  
 
 #Clean names
 names(extracted_data) <- gsub("Acc", "Acelerometer", names(extracted_data))
@@ -51,6 +52,6 @@ names(extracted_data) <- gsub("gravity", "Gravity", names(extracted_data))
 names(extracted_data) <- gsub("()", "", names(extracted_data), fixed=TRUE)
 
 #Create tidy data set with mean of each activity and each subject
-tidy_data <- rbind(extracted_data, colMeans(extracted_data))
+tidy_data <- rbind(extracted_data, means=colMeans(extracted_data))
 
 write.table(tidy_data, file="TidyRunAnalysis.txt", row.name=FALSE)
