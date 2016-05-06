@@ -23,7 +23,7 @@ Read test and training data
 
 Read activity names and feature names
 
-Merge test and traing data and add descriptive names
+Extract test and traing data and add descriptive names
 
 Extract mean and standard deviation for each measurement
 
@@ -63,39 +63,39 @@ fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequ
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
+tBodyAcc-XYZ            new label:  TimeBodyAccelerometer-XYZ
 
-tGravityAcc-XYZ
+tGravityAcc-XYZ         new label:  tGravityAccelerometer-XYZ  
 
-tBodyAccJerk-XYZ
+tBodyAccJerk-XYZ        new label:  TimeBodyAccelerometerJerk-XYZ
 
-tBodyGyro-XYZ
+tBodyGyro-XYZ           new label:  TimeBodyGyroscope-XYZ
 
-tBodyGyroJerk-XYZ
+tBodyGyroJerk-XYZ       new label:  TimeBodyGyroscopeJerk-XYZ
 
-tBodyAccMag
+tBodyAccMag             new label:  TimeBodyAccelerometerMagnitude
 
-tGravityAccMag
+tGravityAccMag          new label:  tGravityAccelerometerMagnitude
 
-tBodyAccJerkMag
+tBodyAccJerkMag         new label:  TimeBodyAccelerometerJerkMagnitude
 
-tBodyGyroMag
+tBodyGyroMag            new label:  TimeBodyGyroscopeMagnitude
 
-tBodyGyroJerkMag
+tBodyGyroJerkMag        new label:  TimeBodyGyroscopeJerkMagnitude
 
-fBodyAcc-XYZ
+fBodyAcc-XYZ            new label:  fBodyAcclerometer-XYZ
 
-fBodyAccJerk-XYZ
+fBodyAccJerk-XYZ        new label:  fBodyAcclerometerJerk-XYZ
 
-fBodyGyro-XYZ
+fBodyGyro-XYZ           new label:  fBodyGyroscope-XYZ
 
-fBodyAccMag
+fBodyAccMag             new label:  fBodyAcclerometerMagnitude
 
-fBodyAccJerkMag
+fBodyAccJerkMag         new label:  fBodyAcclerometerJerkMagnitude
 
-fBodyGyroMag
+fBodyGyroMag            new label:  fBodyGryoscopeMagnitude
 
-fBodyGyroJerkMag
+fBodyGyroJerkMag        new label:  fBodyGryoscopeJerkMagnitude
 
 
 ####Variables
@@ -139,15 +139,15 @@ angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
+gravityMean             new label:  GravieyMean
 
-tBodyAccMean
+tBodyAccMean            new label:  TimeBodyAccelerometerMean
 
-tBodyAccJerkMean
+tBodyAccJerkMean        new label:  TimeBodyAccelerometerJerkMean
 
-tBodyGyroMean
+tBodyGyroMean           new label:  TimeBodyGyroscopeMean
 
-tBodyGyroJerkMean
+tBodyGyroJerkMean       new label:  TimeBodyGyroscopeMean
 
 
 The complete list of variables of each feature vector is available in 'features.txt'
